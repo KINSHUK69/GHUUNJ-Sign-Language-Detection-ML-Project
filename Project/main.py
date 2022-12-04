@@ -78,4 +78,20 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
                 break
     cap.release()
     cv2.destroyAllWindows()
+    
+    
+
+# Extract Key Points
+
+def extract_keypoints(results):
+    # handling error if the landmark doesn't exist ,
+    # so if it doesn't exist then we will give it empty values
+    # as it will be easier for our Nural Network Model to handel the data efficiently.
+    # and flattening the data to maintain the format
+    pose = np.array([[res.x, res.y, res.z, res.visibility] for res in results.pose_landmarks.landmark]).flatten() if results.pose_landmarks else np.zeros(33*4)
+    face = np.array([[res.x, res.y, res.z] for res in results.face_landmarks.landmark]).flatten() if results.face_landmarks else np.zeros(468*3)
+    lh = np.array([[res.x, res.y, res.z] for res in results.left_hand_landmarks.landmark]).flatten() if results.left_hand_landmarks else np.zeros(21*3)
+    rh = np.array([[res.x, res.y, res.z] for res in results.right_hand_landmarks.landmark]).flatten() if results.right_hand_landmarks else np.zeros(21*3)
+    return np.concatenate([pose, face, lh, rh])
+
 
