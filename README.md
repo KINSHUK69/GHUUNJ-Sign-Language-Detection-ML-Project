@@ -26,7 +26,7 @@ pip install requirements.txt<br>
 <h1>WORKFLOW</h1>
 1.	Import and install dependencies<br>
 2.	Keypoints using MP Holistics<br>
-<img src="images/landmarkings.png" width="32" height="32" />
+<img src="images/landmarkings.png" width="32" height="32" style="width:500px;height:400px" />
 3.	Extract keypoint values<br>
 4.	Setup folders for collection<br>
 5.	Collect keupoints values for training and testing<br>
