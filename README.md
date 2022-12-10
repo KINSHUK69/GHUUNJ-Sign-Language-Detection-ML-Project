@@ -2,13 +2,13 @@
 Sign language detection using action recognition [LSTM Deep Learning Model]
 
 <h3>python helpful shortcuts:</h3>
-to install a requirements.txt file : pip install requirements.txt <br>
+to install a requirements.txt file : pip install -r requirements.txt <br>
 to make a requirement.txt file : pip freeze > requirement.txt
 to install all these required dependencies : <br>
 pip install tensorflow opencv-python mediapipe sklearn matplotlib <br>
                     or <br>
 download this requirement.txt file and use this command : <br>
-pip install requirements.txt<br>
+pip install -r requirements.txt<br>
 
 
 
