@@ -94,4 +94,33 @@ def extract_keypoints(results):
     rh = np.array([[res.x, res.y, res.z] for res in results.right_hand_landmarks.landmark]).flatten() if results.right_hand_landmarks else np.zeros(21*3)
     return np.concatenate([pose, face, lh, rh])
 
+# print(extract_keypoints(results).shape)
+# 1662 values = 468*3 + 33*4 + 21*3 + 21*3
+#               face    pose   lh     rh   values of the flattened arrays
+
+
+# SETUP FOLDERS FOR COLLECTION
+
+# path for exported data,numpy arrays
+DATA_PATH = os.path.join('MP_Data')
+
+# action that we try to detect
+actions = np.array(['hello','thanks','iloveyou'])
+
+# using 30 frames to training for our action detection model  i.e., (30*30*3*1662) frames  for a single action
+#                                                                   (videos * frames * actions * key-points)
+# 30 videos worth of data
+no_sequences = 30
+# videos are going to be 30 frames in length
+sequence_length = 30
+
+# creating  different folders for different sequences
+for action in actions:
+    for sequence in range (no_sequences):
+        try:
+            os.makedirs(os.path.join(DATA_PATH,action,str(sequence)))
+        except:
+            pass
+
+
 
