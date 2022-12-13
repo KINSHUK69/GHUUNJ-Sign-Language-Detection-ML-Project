@@ -32,6 +32,7 @@ pip install -r requirements.txt<br>
 5.	Collect keupoints values for training and testing<br>
 6.	Preprocess data and create labels and features<br>
 7.	Build and train LSTM Neural network<br>
+<img src="images/training.png" width="32" height="32" style="width:2000px;height:800px" />
 8.	Make predictions<br>
 9.	Save weights<br>
 10.	Evaluate using confusion matrix and accuracy<br>
