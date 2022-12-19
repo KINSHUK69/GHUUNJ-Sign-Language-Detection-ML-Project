@@ -38,6 +38,15 @@ pip install -r requirements.txt<br>
 10.	Evaluate using confusion matrix and accuracy<br>
 11.	Test in real time .<br>
 
+# Predicting Hello 
+<img src="images/hello.png" width="32" height="32" style="width:500px;height:400px" />
+
+# Predicting Thanks 
+<img src="images/thanks.png" width="32" height="32" style="width:500px;height:400px" />
+
+# Predicting I Love You
+<img src="images/iloveyou.png" width="32" height="32" style="width:500px;height:400px" />
+
 
 
 
