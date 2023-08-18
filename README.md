@@ -1,5 +1,5 @@
 <h1> Sign-Language-Detection-ML-Project</h1>
-Sign language detection using action recognition [LSTM Deep Learning Model]
+Sign language detection using Action Recognition [LSTM Deep Learning Model]
 
 <h3>python helpful shortcuts:</h3>
 to install a requirements.txt file : pip install -r requirements.txt <br>
