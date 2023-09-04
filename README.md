@@ -1,5 +1,5 @@
-<h1> Sign-Language-Detection-ML-Project</h1>
-Sign language detection using Action Recognition [ LSTM Deep Learning Model ]
+# GHUUNJ 
+A Realtime Sign Language Detection project using Action Recognition [ LSTM Deep Learning Model ]
 
 <h3>Some Python's helpful shortcuts:</h3>
 to install a requirements.txt file : pip install -r requirements.txt <br>
@@ -23,7 +23,7 @@ to make a requirement.txt file : pip freeze > requirement.txt<br><br>
 2.	Train a deep neural network with LSTM layers for sequences,<br>
 3.	Perform real-time sign language detection using OpenCV,<br>
 
-<h1>WORKFLOW</h1>
+<h2>WORKFLOW</h2>
 01.	Import and install dependencies,<br>
 02.	Keypoints using MP Holistics,<br><br>
 <img src="images/landmarkings.png" width="32" height="32" style="width:500px;height:400px" />
